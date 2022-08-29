@@ -25,12 +25,12 @@ func TestFromError(t *testing.T) {
 	status, reason := errors.FromError(nil)
 	assert.Equal(t, status, "success")
 	assert.Equal(t, reason, "")
-	// status, reason = errors.FromError(errors.New("internal", fmt.Errorf("db err")))
-	// assert.Equal(t, status, "internal")
-	// assert.Equal(t, reason, "db err")
-	// status, reason = errors.FromError(fmt.Errorf("invlid error"))
-	// assert.Equal(t, status, "unknown")
-	// assert.Equal(t, reason, "invlid error")
+	status, reason = errors.FromError(errors.New("internal", fmt.Errorf("db err")))
+	assert.Equal(t, status, "internal")
+	assert.Equal(t, reason, "db err")
+	status, reason = errors.FromError(fmt.Errorf("invlid error"))
+	assert.Equal(t, status, "unknown")
+	assert.Equal(t, reason, "invlid error")
 }
 func TestError(t *testing.T) {
 	err := errors.New("invalid-argument", fmt.Errorf("invalid argument"))
