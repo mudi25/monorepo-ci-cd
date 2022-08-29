@@ -1,4 +1,4 @@
-# pkg
+# errors pkg
 
 1. Run Test
    ```
