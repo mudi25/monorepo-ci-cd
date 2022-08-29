@@ -2,7 +2,7 @@ name: backend-pkg-logger
 
 on:
   push:
-    branches: ["backend/pkg/logger"]
+    branches: ["backend-pkg-logger"]
   pull_request:  
     branches: ["main", "staging", "develop"]
     paths: ["backend/pkg/logger", ".github/workflows/backend-pkg-logger.yml"] 

@@ -2,7 +2,7 @@ name: backend-pkg-errors
 
 on:
   push:
-    branches: ["backend/pkg/errors"]
+    branches: ["backend-pkg-errors"]
   pull_request:  
     branches: ["main", "staging", "develop"]
     paths: ["backend/pkg/errors", ".github/workflows/backend-pkg-errors.yml"] 
