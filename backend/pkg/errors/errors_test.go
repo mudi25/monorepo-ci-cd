@@ -11,7 +11,6 @@ import (
 func TestMain(m *testing.M) {
 	m.Run()
 }
-
 func TestNew(t *testing.T) {
 	e := errors.New("internal", nil)
 	assert.Equal(t, e.Reason, "err is nil")
