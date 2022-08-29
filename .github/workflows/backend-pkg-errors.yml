@@ -8,10 +8,10 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: ./backend/pkg/errors
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
 
